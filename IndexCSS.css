@@ -5,23 +5,28 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
-  background-color: #aa88ee;
-  font-family: Arial, sans-serif;
+  background-color: #854ef3;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("Images/Background GIF.webp");
+  background-size: cover;
 }
+
 .profile {
   text-align: center;
   background: white;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 20px 100px rgba(0, 0, 0, 1);
 }
 
 .background-container {
   position: relative;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 600px;
   overflow: hidden;
+  top: 20%;
 }
+
 .background-container::before {
   content: "";
   position: absolute;
@@ -29,5 +34,41 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('https://64.media.tumblr.com/eeb75bc0ce9b02e52a9372feddf5f016/4afeef044ac67fda-fd/s540x810/7c1634a12966abe75962eb165d659557af7d71f3.gifv') no-repeat center center;
-  background-size: cover;
+  z-index: -1;
+}
+
+.avatar {
+  width: 30%;
+  height: 30%;
+  border: 6px solid #854ef3;
+  border-radius: 50%;
+}
+
+h1 {
+  color: #854ef3;
+}
+
+button {
+  appearance: button;
+  background-color: #854ef3;
+  border: solid transparent;
+  border-radius: 20px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  width: 120px;
+  padding: 15px;
+  margin: 10px;
+  line-height: 20px; 
+  text-align: center;
+  overflow: hidden;  
+}
+
+button:hover {
+  background-color: #aa55ee;
+}
