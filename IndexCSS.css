@@ -22,7 +22,7 @@ body {
 .background-container {
   position: relative;
   height: 100vh;
-  width: 200px;
+  width: 90%;
   overflow: hidden;
   top: 20%;
 }
